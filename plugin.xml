@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.plugins.d11a" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android">
+<name>D11A</name>
+<js-module name="D11A" src="www/D11A.js">
+<clobbers target="d11a" />
+</js-module>
+<platform name="android">
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="D11A">
+<param name="android-package" value="cordova.plugins.d11a.D11A" />
+</feature>
+</config-file>
+<config-file parent="/*" target="AndroidManifest.xml">
+</config-file>
+<source-file src="src/android/D11A.java" target-dir="src/cordova/plugins/d11a/" />
+<source-file src="src/android/GlobalContants.java" target-dir="src/cordova/plugins/d11a/" />
+
+<source-file src="src/android/libs/armeabi/libmupdf.so" target-dir="app/src/main/jniLibs/armeabi/" />
+<source-file src="src/android/libs/armeabi/libserial_port.so" target-dir="app/src/main/jniLibs/armeabi/" />
+<source-file src="src/android/libs/x86/libserial_port.so" target-dir="app/src/main/jniLibs/arm64-v8a/" />
+
+<source-file src="src/android/libs/armeabi-v7a/libmupdf.so" target-dir="app/src/main/jniLibs/armeabi-v7a/" />
+<source-file src="src/android/libs/armeabi-v7a/libserial_port.so" target-dir="app/src/main/jniLibs/armeabi-v7a/" />
+
+<lib-file src="src/android/libs/printersdkv5.3.jar" />
+</platform>
+</plugin>

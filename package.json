@@ -1,0 +1,17 @@
+{
+  "name": "cordova.plugins.d11a",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova.plugins.d11a",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Mukopaje Singogo",
+  "license": "ISC"
+}
